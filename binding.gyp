@@ -1,13 +1,11 @@
 {
     "targets": [{
-        "target_name": "testaddon",
+        "target_name": "fifolist",
         "cflags!": [ "-fno-exceptions" ],
         "cflags_cc!": [ "-fno-exceptions" ],
         "sources": [
             "cppsrc/main.cpp",
-            "cppsrc/Samples/functionexample.cpp",
-            "cppsrc/Samples/actualclass.cpp",
-            "cppsrc/Samples/classexample.cpp"
+            "cppsrc/lib/binary-queue.cpp"
         ],
         'include_dirs': [
             "<!@(node -p \"require('node-addon-api').include\")"
